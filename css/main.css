@@ -24,7 +24,7 @@ h2 {
   font-weight: 400;
   font-size: 32px;
   color: white;
-  line-height: 48px;
+  line-height: 66px;
 }
 
 
@@ -49,3 +49,53 @@ h2 {
   background-color: rgba(26, 26, 26, 0.75);
   padding: 80px 60px;
 }
+
+.logo {
+  width: 140px;
+  margin: 0 0 40px;
+}
+
+.app-store-link {
+  display: block;
+  margin-top: 40px;
+}
+
+
+/* smaller desktop size */
+
+@media(max-width: 1000px) {
+  h1 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 50px;
+  }
+}
+
+
+/* mobile size */
+
+@media(max-width: 700px) {
+  body {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  h2 {
+    font-size: 18px;
+    line-height: 33px;
+    text-align: center;
+  }
+
+  .logo {
+    text-align: left;
+  }
+}
+
