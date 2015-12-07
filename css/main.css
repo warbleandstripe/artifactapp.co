@@ -39,6 +39,7 @@ h2 {
   background-size: cover;
   background-position: center;
   border-top: solid 10px #49DF8E;
+  overflow: auto;
 }
 
 .page-mask {
@@ -49,6 +50,7 @@ h2 {
   height: 100%;
   background-color: rgba(26, 26, 26, 0.75);
   padding: 80px 60px;
+  overflow: auto;
 }
 
 .logo {
@@ -101,6 +103,15 @@ h2 {
 
   .break-large {
     display: none;
+  }
+}
+
+
+/* smaller mobiles */
+
+@media(max-width: 320px) {
+  .page-mask {
+    padding: 60px 20px;
   }
 }
 
