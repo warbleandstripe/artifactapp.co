@@ -143,6 +143,8 @@ h2 {
   }
 
   .play-video {
+    display: block;
+    line-height: 40px;
     margin-left: 0;
     margin-top: 0;
   }
