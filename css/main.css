@@ -59,9 +59,46 @@ h2 {
 }
 
 .app-store-link {
-  display: block;
   margin-top: 40px;
+  display: inline-block;
+  line-height: 65px;
+  vertical-align: top;
 }
+
+.play-video {
+  margin-left: 20px;
+  margin-top: 40px;
+  display: inline-block;
+  line-height: 65px;
+  color: white;
+  text-decoration: none;
+  vertical-align: top;
+}
+
+.preview-video {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(26, 26, 26, 0.75);
+}
+
+.preview-video.visible {
+  display: block;
+}
+
+.preview-video video {
+  display: block;
+  z-index: 1;
+  position: absolute;
+  top: calc(50% - 338px);
+  left: calc(50% - 195px);
+  width: 375px;
+  height: 667px;
+}
+
 
 
 /* smaller desktop size */
@@ -103,6 +140,11 @@ h2 {
 
   .break-large {
     display: none;
+  }
+
+  .play-video {
+    margin-left: 0;
+    margin-top: 0;
   }
 }
 
